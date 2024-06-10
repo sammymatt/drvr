@@ -1,0 +1,14 @@
+<div>
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search for golf courses">
+    <button (click)="search()">Search</button>
+  </div>
+  
+  <div *ngIf="searchTerm">
+    <h3>Search Results</h3>
+    <ul>
+      <li *ngFor="let course of filteredCourses">
+        {{ course.name }} - {{ course.location }}
+      </li>
+    </ul>
+  </div>
+  
