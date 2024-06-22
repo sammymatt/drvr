@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CoursefinderComponent } from './coursefinder/coursefinder.component';
-import { ScoresComponent } from './scores/scores.component'; // Import your other components here
+import { ScoresComponent } from './scores/scores.component'; 
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'coursefinder', component: CoursefinderComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
