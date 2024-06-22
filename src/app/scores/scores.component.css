@@ -1,0 +1,30 @@
+.scores-container {
+    padding: 20px;
+    margin-left: -40px; 
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px; /* Adds space between the buttons */
+  }
+  
+  .btn {
+    margin: 5px;
+  }
+
+  .form-container {
+    margin-top: 20px; /* Adds space between the buttons and the form */
+  }
+
+  .table-container {
+    margin-top: 20px; /* Adds space between the buttons and the form */
+  }
+
+  .form-control {
+    width: 200px;
+  }
+  

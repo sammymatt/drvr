@@ -4,16 +4,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CoursefinderComponent } from './coursefinder/coursefinder.component'; // Import your other components here
+import { CoursefinderComponent } from './coursefinder/coursefinder.component';
+import { ScoresComponent } from './scores/scores.component'; // Import your other components here
 
 const routes: Routes = [
-  { path: 'coursefinder', component: CoursefinderComponent }
+  { path: 'coursefinder', component: CoursefinderComponent },
+  { path: 'scores', component: ScoresComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursefinderComponent
+    CoursefinderComponent,
+    ScoresComponent
   ],
   imports: [
     BrowserModule,
